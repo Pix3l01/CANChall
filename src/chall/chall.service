@@ -1,0 +1,11 @@
+[Unit]
+Description=Can chall
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/bin/sh /chall/start_chall.sh
+
+[Install]
+WantedBy=multi-user.target
